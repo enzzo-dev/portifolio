@@ -181,6 +181,7 @@ div.sobre{
     font-family: 'Tomorrow' , sans-serif;
 }
 
+/*Inicio das configurações para definir nivel de habilidades*/
 .skill  li:before{
     content: "";
     position: absolute;
@@ -245,6 +246,8 @@ li.php:after{
         width: 280px;
     }
 }
+
+/*Inicio das configurações para definir nivel de habilidades*/
 
 .portifolio{
     width: 100%;
