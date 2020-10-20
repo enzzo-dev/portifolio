@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    background-color: rgb(255, 255, 255)
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    
+}
+
+.menu a{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Tomorrow' , sans-serif;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    padding: 33px 20px;
+    text-transform: uppercase;
+}
+
+.menu a:hover{
+    transition: 0.2s;
+    background-color: rgb(24, 24, 24);
+}
+
+.menu nav{
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.menu li{
+    padding-top: 25px;
+}
+
+div.sobre{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.sobre-mim{
+    width: 1200px;
+    height: 500px;
+    margin: 0px auto;
+    padding-top: 100px;
+}
+
+.sobre-mim h3{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    font-family: 'Bebas Neue' , cursive;
+    color: rgb(0, 0, 0);
+}
+
+.sobre-mim > h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    font-family: 'Bebas Neue' , cursive;
+    color: rgb(0, 0, 0);
+}
+
+.sobre-mim p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Tomorrow' , sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.sobre-mim input[type=button]{
+    width: 180px;
+    height: 50px;
+    font-weight: 300;
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive ;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+    border: none;
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-left: 520px;
+    cursor: pointer;
+}
+
+.skills{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(206, 206, 206);
+}
+
+.skills > h2{
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 300;
+    font-family: 'Bebas Neue' , cursive;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-top: 30px;
+}
+
+.habilidades{
+    width: 1400px;
+    height: 500px;
+    margin: 80px auto;
+    display: flex;
+}
+
+.curriculo{
+    width: 50%;
+    height: 200px;
+    margin-top: 50px;
+    border: none;
+    border-right: 2px solid black;
+}
+
+.curriculo h2{
+    font-size: 28px;
+    font-weight: 300;
+    font-family: 'Bebas Neue' , cursive;
+}
+
+.curriculo p{
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Tomorrow' , sans-serif;
+}
+
+.curriculo input[type=submit]{
+    width: 220px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Tomorrow' , sans-serif;
+    border: none;
+    border-radius: 20px;
+    margin-top:25px;
+    margin-left: 230px;
+    cursor: pointer;
+}
+
+.skill{
+    flex-direction: column;
+    display: flex;
+    width: 50%;
+    height: 400px;
+    padding: 20px;
+}
+
+.skill  li{
+    position: relative;
+    list-style: none;
+    margin: 30px 0;
+    font-weight: 500;
+    text-transform:uppercase;
+    font-family: 'Tomorrow' , sans-serif;
+}
+
+.skill  li:before{
+    content: "";
+    position: absolute;
+    top: calc(100% - (-10px));
+    left: 0;
+    width: 400px;
+    height: 15px;
+    background-color: rgb(54, 126, 223, 0.5);
+    border-radius: 1000px;
+}
+
+.skill li:after{
+    content: "";
+    position: absolute;
+    top: calc(100% - (-10px));
+    left: 0;
+    width: 0;
+    height: 15px;
+    background-color: rgb(22, 22, 22);
+    border-radius: 1000px;
+    animation-duration: .7s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+li.design:after{
+    animation-name: design;
+}
+
+@keyframes design{
+    to{
+        width: 200px;
+    }
+}
+
+li.html:after{
+    animation-name: html;
+}
+
+@keyframes html{
+    to{
+        width: 360px;
+    }
+}
+
+li.css:after{
+    animation-name: css;
+}
+
+@keyframes css{
+    to{
+        width: 340px;
+    }
+}
+
+li.php:after{
+    animation-name: php;
+}
+
+@keyframes php{
+    to{
+        width: 280px;
+    }
+}
+
+.portifolio{
+    width: 100%;
+    height: 1000px;
+    margin: 50px auto;
+}
+
+.portifolio h2{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 300;
+    font-family: 'Bebas Neue' , cursive;
+}
+
+.trabalhos{
+    width: 1000px;
+    height: auto;
+    margin: 50px auto;
+}
+
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+}
+
+footer h3{
+    font-size: 1p8x;
+    font-weight: 300;
+    font-family: 'Tomorrow' , sans-serif;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
