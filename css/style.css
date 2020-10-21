@@ -141,7 +141,7 @@ div.sobre{
 }
 
 .habilidades{
-    width: 50%;
+    width: 100%;
     height: 500px;
     margin: 80px auto;
     display: flex;
@@ -153,6 +153,7 @@ div.sobre{
     margin-top: 50px;
     border: none;
     border-right: 2px solid black;
+    padding: 0 2%;
 }
 
 .curriculo h2{
@@ -178,12 +179,11 @@ div.sobre{
     border: none;
     border-radius: 20px;
     margin-top:25px;
-    margin-left: 230px;
+    margin-left: 110px;
     cursor: pointer;
 }
 
 .skill{
-    flex-direction: row;
     display: flex;
     width: 50%;
     height: 400px;
@@ -283,11 +283,15 @@ li.php:after{
 .trabalhos{
     width: 1400px;
     height: auto;
-    margin: 50px 320px;
+    margin: 50px 240px;
     display: flex;
+    justify-content: center;
 }
 
 .trabalhos img{
+    width: 500px;
+    height: 600px;
+
     margin-right: 25px;
     display: flex;
     justify-content: center;
@@ -303,38 +307,79 @@ footer h3{
     font-size: 18px;
     font-weight: 300;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: white;
+    color: rgb(112, 112, 112);
     text-align: center;
     padding-top: 30px;
 }
 
 @media screen and (max-width: 768px){
+
     .menu ul{
         display: none;
         flex-direction: column;
     }
+
     .logo h2{
         margin-left: 30px;
         font-size: 26px;
     }
+
     .sobre{
         max-width: 768px;
         width: 100%;
         height: 500px;
         background-color: rgb(255, 255, 255);
     }    
+
     .sobre-mim input[type=button]{
         width: 200px;
         height: 50px;
         font-size: 16px;
         margin-left: 130px;
     }
+
+    .skills{
+        height: 700px;
+    }
+
+    .habilidades{
+        width: 100%;
+        flex-direction: column;
+        margin-top: 40px;
+        padding: 0 2%;
+    }
+
     .curriculo{
         width: 100%;
         padding: 0 2%;
+        border: none;
     }
+
     .skill{
+        margin-top: 50px;
         width: 100%;
         padding: 0 2%;
+    }
+
+    footer h3{
+        font-size: 14px;
+        color: rgb(156, 156, 156);
+    }
+
+    .trabalhos{
+        max-width: 768px;
+        width: 100%;
+        margin: 20px auto;
+        padding: 0 12%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .trabalhos img{
+        width: 350px;
+        height:400px;
+        margin-bottom: 25px;
+        padding:0 2%;
     }
 }
