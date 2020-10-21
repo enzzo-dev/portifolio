@@ -29,7 +29,7 @@ header{
     text-decoration: none;
     border: none;
     cursor: pointer;
-    padding: 33px 20px;
+    padding: 28px 20px;
     text-transform: uppercase;
 }
 
@@ -40,7 +40,8 @@ header{
 
 .menu nav{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    margin-right: 50px;
 }
 
 .menu ul{
@@ -49,7 +50,7 @@ header{
 }
 
 .menu li{
-    padding-top: 25px;
+    padding-top: 30px;
 }
 
 div.sobre{
@@ -265,7 +266,7 @@ li.php:after{
 .trabalhos{
     width: 1400px;
     height: auto;
-    margin: 50px auto;
+    margin: 50px 320px;
     display: flex;
 }
 
